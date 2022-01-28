@@ -19,7 +19,7 @@ import {
   ReloadInstructions,
 } from 'react-native/Libraries/NewAppScreen';
 import { AppRegistry, ToastAndroid } from 'react-native';
-import NavBar, { NavButton, NavButtonText, NavTitle } from 'react-native-nav';
+import { NavBar, NavButton, NavButtonText, NavTitle } from 'react-native-nav';
 import { ToastProvider, useToast } from 'react-native-toast-notifications';
 
 const { width, height } = Dimensions.get('screen')
@@ -52,29 +52,29 @@ const App = () => {
     // let dateObject = new Date(liveDate)
     // console.log(dateObject.toLocaleString(), newDt.toLocaleString())
 
-    let finalRes = new Date(res).getHours()
+    // let finalRes = new Date(res).getHours()
 
-    if(finalRes < 4) {
-      ToastAndroid.show('It Still Just a :' + finalRes + 'Hours', 
-      ToastAndroid.SHORT,
-      ToastAndroid.CENTER,
-      ToastAndroid.LONG
-      );
-    }
+    // if(finalRes < 4) {
+    //   ToastAndroid.show('It Still Just a :' + finalRes + 'Hours', 
+    //   ToastAndroid.SHORT,
+    //   ToastAndroid.CENTER,
+    //   ToastAndroid.LONG
+    //   );
+    // }
 
     // console.log(new Date(res).getHours())
 
     
   }
 
-  function handlePress (dateOrder) { 
-    let timeBefore = 14400000
-    let res = Date.now() - dateOrder
+  // function handlePress (dateOrder) { 
+  //   let timeBefore = 14400000
+  //   let res = Date.now() - dateOrder
 
-    let hours = (res / (1000 * 60 * 60)).toFixed(2)
+  //   let hours = (res / (1000 * 60 * 60)).toFixed(2)
 
-    Alert.alert(hours.toString())
-  }
+  //   Alert.alert(hours.toString())
+  // }
   
 
   // set time out to deverge the date before 4 hours :
@@ -109,7 +109,7 @@ const App = () => {
 const styles = StyleSheet.create({
 
   container : {
-    backgroundColor : 'white',
+    // backgroundColor : 'white',
     flex : 1,
     justifyContent : 'center',
     alignItems : 'center',

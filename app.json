@@ -1,6 +1,4 @@
 {
-  "name": "mApp",
-  "displayName": "mApp",
   "expo" : {
     "name" : "mApp",
     "slug" : "mApp"
